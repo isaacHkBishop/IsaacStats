@@ -1,1 +1,84 @@
+# maintain a list and preform stutistics on it
+# assings the values to the list
+values = [1, 2, 3, 3, 4, 5]
+menu = 11
+
+# Prints off user options
+print("1. Add Values", "2. Delete values by number", "3. Delete values by position in list", "4. Display Values", "\n")
+print("5. Compute Mean", "6. Compute Median", "7. Compute Midpoint", "8. Compute Mode(s)", "9. Compute Standard Deviation", "0. Exit", "\n")
+
+def list()
+  addValue
+deleteValueByValue
+deleteValueByLoction
+displayList
+ComputeMean
+
+def addValue()
+# menu 1
+  values.append(input(int(print("what value do you want to add? one at a time."))))
+
+def deleteValueByValue()
+# menu 2
+  print(values)
+  values.remove(input(int(print("What value do you want to remove? one at a time."))))
+
+def deleteValueByLoction()
+# menu 3
+  print(values)
+  print("1. 2. 3. 4. ect...")
+  del values[input(int(print("What index values do you want to remove? one at a time.")))-1]
+
+def displayList()
+# menu 4
+  print(values)
+
+def ComputeMean()
+# menu 5
+  mean = sum(numbers) / len(numbers)
+  return(mean)
+
+def ComputeMedian()
+# menu 6
+# we are returning the midle int
+# if its even we are returning the midle of the 2
+  temp = len(values)
+  hold = 0
+  mom = 0
+  if temp % 2 != 0:
+    temp -= 1
+    temp = temp/2
+    return values[temp]
+  else :
+    temp = temp/2
+    hold += values[temp]
+    hold += values[temp-1]
+    mom = hold/2
+    return mom
+
+def ComputeMidpoint()
+# mune 7
+midpoint = (min(numbers) + max(numbers)) / 2
+return midpoint
+
+def ComputeMode()
+# menu 8
+  modes = []
+  temp = input(int(print("how many modes do yuo want to do?")))
+  while x < temp+1 :
+    modes[input(int(print("what mode do you want? one at a time.")))]
+
+def ComputeStanderdDeviation()
+# menu 9
+  hold = []
+  temp = ComputeMean()
+  for x in values :
+    hold[x] = values[x] - temp
+  for x in values :
+    hold[x] = hold[x] ** 2
+  return hold
+
+def exit()
+# menu 0
+
 
